@@ -1,0 +1,96 @@
+@media screen and (max-width: 991px){
+    h3{
+        font-size: 1.2rem;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+    .mian-nav{
+        overflow: initial;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.4s ease-in-out;
+    }
+    .nav-links.active{
+        left: -100%;
+    }
+    .nav-links ul {
+        flex-direction: column;
+    }
+    
+    .examples-area{
+        gap: 10px;
+    }
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+    .cta-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* h1{
+        font-size: 1.8rem;
+    } */
+     h1{
+        font-size: 2rem;
+     }
+    .primary-button{
+        width: 100%;
+    }
+    .hearder-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .features-card{
+        min-width: calc(50% - 10px);
+    }
+    .big-feature-container, #second-big-feature{
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+    .link-column{
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    :root{
+        --padding-inline-section: 10px
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .features-card{
+        min-width: 100%
+    }
+    .examples-card{
+        width: 100%;
+    }
+    .cta-section{
+        padding: 80px var(--padding-inline-section) 80px;
+        background-color: #183b54;
+    }
+}
